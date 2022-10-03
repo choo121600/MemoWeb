@@ -1,0 +1,88 @@
+.header {
+    border: solid;
+    display: flex;
+    justify-content: center;
+}
+
+#memoContainer {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+}
+
+#addMemoForm {
+    margin: 10px;
+    width: -webkit-fill-available;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid;
+}
+
+#addMemoForm > label {
+    margin: 5px;
+}
+
+#addMemoForm > input {
+    margin: 5px;
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+
+#addMemoForm > button {
+    margin: 5px;
+    padding: 10px;
+    width: -webkit-fill-available;
+}
+
+#memoList {
+    margin: 10px 0;
+    display: grid;
+    border: solid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+#memoList > .memoCard {
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: solid;
+    height: 200px;
+}
+
+#memoList > .memoCard > .memoContent {
+    margin: 5px;
+    width: -webkit-fill-available;
+}
+
+#memoList > .memoCard > .memoContent > .memoTitle {
+    border: none;
+    font-size: large;
+    width: -webkit-fill-available;
+    color: gray;
+}
+
+#memoList > .memoCard > .memoContent > .memoTitle:focus {
+    outline: none;
+}
+
+#memoList > .memoCard > .memoContent > .memoTitle:read-only {
+    outline: none;
+    color: black;
+}
+
+#memoList > .memoCard > .memoFooter {
+    margin: 5px;
+    width: -webkit-fill-available;
+}
+
+#memoList > .memoCard > .memoFooter > button {
+    margin: 5px;
+    padding: 10px;
+    width: -webkit-fill-available;
+}
